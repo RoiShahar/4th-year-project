@@ -109,6 +109,7 @@ Follow these instructions to set up and run the Smart Mattress system locally.
 
 ## 🧪 Testing
 Just lie on the Smart mattress and see the magic happen on the screen!
+![Screenshot Image](/photos/screen.png)
 
 ## 🚀 Deployment
 To deploy the system in a live environment:
