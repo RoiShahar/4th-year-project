@@ -64,7 +64,7 @@ Follow these instructions to set up and run the Smart Mattress system locally.
        
 **2. Physically Position the Mattress Sensors:**
    - The Arduino is connected to 16 FSR406 sensors, which must be positioned in a specific layout on the mattress.
-   - Use the following reference diagram to place the sensors correctly:
+   - Use the following reference picture to place the sensors correctly (each color in the wodden matrix refers to a 'colored' signed cabal):
    <!-- cool project cover image -->
 ![FSR Matrix](/photos/location.jpeg)
    - Make sure each sensor is securely fixed in the correct location, and that the connection wires are properly routed to the Arduino, ensuring there is no movement during testing.
@@ -110,6 +110,8 @@ Follow these instructions to set up and run the Smart Mattress system locally.
 ## 🧪 Testing
 Just lie on the Smart mattress and see the magic happen on the screen!
 ![Screenshot Image](/photos/screen.png)
+
+
 
 ## 🚀 Deployment
 To deploy the system in a live environment:
