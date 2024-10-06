@@ -3,7 +3,7 @@ A real-time monitoring solution designed to help users improve their sleeping po
 The Smart Mattress monitors sleeping positions using force-sensitive resistors (FSRs) connected to 
 an Arduino, sending data for analysis using a pre-trained neural network.
 
-[Project Cover Image](/photos/cover.jpeg)
+![Project Cover Image](/photos/cover.JPG)
 
 <!-- table of content -->
 ## Table of Contents
@@ -66,7 +66,7 @@ Follow these instructions to set up and run the Smart Mattress system locally.
    - The Arduino is connected to 16 FSR406 sensors, which must be positioned in a specific layout on the mattress.
    - Use the following reference diagram to place the sensors correctly:
    <!-- cool project cover image -->
-![FSR Matrix](/photos/location.jpg)
+![FSR Matrix](/photos/location.jpeg)
    - Make sure each sensor is securely fixed in the correct location, and that the connection wires are properly routed to the Arduino, ensuring there is no movement during testing.
      
 **3. Connect the Arduino to the Computer:**
