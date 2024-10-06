@@ -111,6 +111,15 @@ Follow these instructions to set up and run the Smart Mattress system locally.
 Just lie on the Smart mattress and see the magic happen on the screen!
 ![Screenshot Image](/photos/screen.png)
 
+To explore our neural networks, you can check out our top three models inside the 'neural-network' folder:
+
+1. **Smart_Sheet_Pytorch_no_interpolation.ipynb**: Our best network, which does not apply any interpolation.
+   
+2. **pytorch_smart_sheet.ipynb**: Our second-best network, utilizing interpolation to transform the raw data from a 16-element vector to a 256-element vector.
+
+3. **U-net_Smart_Mattress.ipynb**: A U-net based neural network, also without any interpolation applied.
+
+Feel free to try them out, by uploading them to google colab, and run them over merged sets from our recorded samples (inside the samples/all samples folder)!
 
 
 ## 🚀 Deployment
