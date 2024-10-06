@@ -58,61 +58,72 @@ Follow these instructions to set up and run the Smart Mattress system locally.
 - Pandas, NumPy, PyTorch, Flask - Python libraries used in the project.
 
 ### 🏗️ Installing
-1. Clone repository:
+**1. Clone repository:**
 
        git clone https://github.com/RoiShahar/4th-year-project/
-   
-2. Physically Position the Mattress Sensors:
+
+       
+**2. Physically Position the Mattress Sensors:**
    - The Arduino is connected to 16 FSR406 sensors, which must be positioned in a specific layout on the mattress.
    - Use the following reference diagram to place the sensors correctly:
-   
+   <!-- cool project cover image -->
+![Project Matrix](/media/project-cover-img.jpg)
    - Make sure each sensor is securely fixed in the correct location, and that the connection wires are properly routed to the Arduino, ensuring there is no movement during testing.
-
-
-3. Connect the Arduino to the Computer:
+     
+**3. Connect the Arduino to the Computer:**
    - Connect the Arduino Mega 2560, which is already attached to the sensors, to the computer via USB.
-
-4. Verify COM Port in Arduino IDE:
+     
+**4. Verify COM Port in Arduino IDE:**
    - Open the Arduino IDE on the computer.
    - Go to **Tools > Port** and note the COM number assigned to the Arduino (e.g., COM3, COM4, etc.).
    - Make sure that the Arduino is powered on and successfully recognized by the computer.
-
-5. Set the Correct COM Port in the Python Code:
+     
+**5. Set the Correct COM Port in the Python Code:**
    - Navigate to the cloned repository directory and open the main.py file in a code editor.
    - Locate the line where the COM port is defined for connecting to the Arduino.
    - Update the COM port to match the one you identified in Arduino IDE:
      
          arduino_port = 'COMX' # Change it according to your current Arduino COM input
-
-6. Update the Neural Network Model Path:
+     
+**6. Update the Neural Network Model Path:**
    - Open the predict_smart_mattress.py file.
    - Locate the main function where the model path (model_path) is defined.
    - Update the model_path to point to the correct location of the neural network model in the cloned repository:
 
          model_path = 'C:/YOUR_CLONED_REPOSITORY_PATH/smart_mattress_model.pth'
+     
+**7. Install Required Python Libraries:**
+   - In your terminal, navigate to the project directory and install the required libraries:
+   
+         pip install pandas numpy torch flask pyserial
 
+**8. Run the Backend and User Interface:**
+   - Start the backend by running the app.py script:
 
-End with an example of getting some data out of the system or using it
-for a little demo
+         python app.py
+   - Once the server starts, open a web browser and go to the following URL to access the Smart Mattress interface:
+
+         http://127.0.0.1:5000/
+
+**9. You are now ready to use the Smart Mattress system in real-time!**
+
 
 ## 🧪 Testing
-Explain how to run tests for this project
-
-### Sample Tests
-Explain what these tests test and why
-
-    Give an example
+Just lie on the Smart mattress and see the magic happen on the screen!
 
 ## 🚀 Deployment
-Add additional notes on how to deploy this on a live system
-
+To deploy the system in a live environment:
+1. **Hardware:** Embed the Arduino and sensors in the mattress as per the design.
+2. **Software Setup:** Install software dependencies on a suitable system, like a Raspberry Pi.
+3. **Cloud Integration:** Optionally integrate the system with cloud storage (MongoDB) to store the sleep data for long-term analysis.
+   
 ## ⚙️ Built With
-  - [Based on the amazing work of reserch group xxxx](https://www.example.com)
-  - [Contributor Covenant](https://www.contributor-covenant.org/) - Used for the Code of Conduct
-  - [Creative Commons](https://creativecommons.org/) - Used to choose the license
+- PyTorch - For building and training the neural network.
+- Flask - Web framework for the user interface.
+- Arduino - To handle sensor sampling.
 
 
 ## 🙏 Acknowledgments
-  - Hat tip to anyone whose code is used
-  - Inspiration
-  - etc
+  - Special thanks to Qusay Muzaffar for his continuous guidance, mentoring and support.
+  - Thanks to the HUJI CSE Final projects staff - Prof. Daphna Weinshall, Yuri Klebanov, and Nir Sweed, for or providing resources and guidance.
+  - Thanks to Yedidya Yehezkeli for all his help in the lab.
